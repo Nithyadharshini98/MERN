@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arithmetic operations:sum, difference, product, and quotient of two numbers//
+        let a = 10;
+        let b = 20;
+        let c = 30;
+
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a * b);
+        console.log(a / b);
+
+        //Take three numbers and find their average.//
+        let avg = (a + b + c) / 3;
+         console.log(avg);
+
+         //Area of the rectangle//
+         let len = 20;
+         let wid = 30;
+         let area = len * wid;
+         console.log(area)
+
+         //Convert temperature from Celsius to Fahrenheit using a formula.//
+         let cel = 108;
+         fahrenheit = (cel * 9) / 5 +32;
+         console.log(fahrenheit)
+
+         //Find the remainder when one number is divided by another.//
+         console.log(a % b);
+    //ARITHMETIC OPERATORS
+         //Assign a number to a variable and then increase it by 10 using the += operator.//
+        let num = 15
+        console.log(a += num);
+
+        //Write a program that multiplies a number by 5 using *=.// 
+        console.log(num *= 5);
+
+        //Use -= to decrease the value of a variable by 3.//
+        console.log(num -= 3);
+
+        //Divide a variable by 2 using /= and print the updated result.//
+        console.log(num /= 2);
+
+        //Combine multiple assignment operators in one example//
+         let x = 5;
+         let y = 3;
+         let z = 2;
+         let num1 = x += y *= z -= x
+         console.log(num1);
+        //Compare two numbers and print whether they are equal or not//
+         let m = 30;
+         let n = 3;
+         console.log(m == n);
+        //Check if one number is greater than another.//
+         console.log(m > n);
+        //Compare two string variables to check if they are the same.//
+         let u = "Nithya"
+         let v = "nithya"
+         console.log(u == v);
+        //Test whether a number is less than or equal to 100//
+          console.log(m <= 100);
+        //Write a program to check if two numbers are strictly equal (===).//
+         console.log(m === n);
+    //&& logical operators &&// 
+        //Check if a number is between 10 and 50 using logical AND (&&).//
+        console.log((m > 10) &&  (m < 100));
+        //Check if a number is less than 10 OR greater than 100 using ||.//
+        console.log((m<10) || (m>100));
+        //Use NOT (!) to invert a Boolean value.//
+        let k = "false"
+        console.log( k,"is",!k );
+        //Combine && and || in one statement to test a complex condition.//
+        let res = (m < 10) || (m > 100) && (m < n);
+        console.log(res);
+        //Check if a student passes (marks ≥ 35) using logical operators.//
+        console.log( m >= 35 );
+    //increment & decrement operators//
+        //Create a counter that increases by 1 using ++.//
+        let d = 6;
+        console.log( ++d );
+        //Write a program that decreases a variable using --.//
+        console.log( --d);
+        //Demonstrate the difference between pre-increment (++x) and post-increment (x++)//
+        console.log( "++d:",++d,"d++:",d++ );
+        //Show how decrement works in a loop from 10 to 1//
+        for ( let i = 10;i >= 1; i--){
+            console.log ( i );
+        } 
+        //. Use ++ and -- in the same expression and observe the result.//
+        let q = 15;
+        let r = 26;
+        console.log((--q + r++));
+     //Ternary operator//
+        //Check if a number is even or odd using the ternary operator.//
+       let ans=(r % 2 == 0);
+       //Use the ternary operator to find the greater number between two variables.//
+       let grt=(r>q) ? r+" is greater than"+q : q+" is greater then" +r ;
+       console.log(grt);
+       //Write a one-line ternary statement to check if a person can vote (age ≥ 18)//
+       let vote=(r>=18) ? "Eligible to vote" : " Not Eligible to vote" ;
+       console.log(vote);
+      //29. Use nested ternary to find if a number is positive, negative, or zero.")//
+      let rr=0;
+        number = (rr==0)? "Zero":((rr < 0)?"Negative":"Positive");
+       console.log(num);
+    //Check whether a string is empty or not using the ternary operator//
+       let mystring= "";
+        res= (mystring.length === 0?"string is empty":"string is not empty");
+       console.log(res);
+// Bitwise Operator
+//31. Find the bitwise AND of two numbers.//
+let andResult = a & b;
+console.log(a, "&", b, "=", andResult);
+//32. Find the bitwise OR of two numbers.//
+let orResult = a | b;
+console.log(a, "|", b, "=", orResult);
+//33. Find the bitwise XOR of two numbers//
+let xorResult = a ^ b;
+console.log(a, "^", b, "=", xorResult);
+//34. Perform left and right shift on a number.//
+let numb = 5;
+let leftShift = numb << 1;
+let rightShift = numb >> 1;
+console.log(numb, "<< 1 =", leftShift);
+console.log(numb, ">> 1 =", rightShift);
+//35. Combine bitwise and logical operators in one example.//
+let xx = 5, yy = 3, zz = 0;
+if ((xx & yy) && (yy | zz)) {
+    console.log("Condition is true");
+} else {
+    console.log("Condition is false");
+}
+//36. Declare variables of different types and perform operations.//
+let str = "Hello";
+let num2 = 10;
+let flag = true;
+console.log("String + Number:", str + num2);   
+console.log("Number + Boolean:", num2 + flag); 
+console.log("String + Boolean:", str + flag); 
+//37. Swap two numbers without using a third variable//
+let a1 = 5, b1 = 10;
+console.log("Before Swap: a =", a1, "b =", b1);
+a1 = a1 + b1; 
+b1 = a1 - b1; 
+a1 = a1 - b1; 
+console.log("After Swap: a =", a1, "b =", b1);
+//38. Combine arithmetic, comparison, and logical operators//
+let x1 = 10, y1 = 20;
+if ((x1 + y1 > 25) && (x1 < y1)) {
+    console.log("Condition is true");
+} else {
+    console.log("Condition is false");
+}
+//"39. Check a person’s score using ternary operator."//
+let score = 85;
+let result = (score >= 90) ? "Excellent" : (score >= 50 ? "Pass" : "Fail");
+console.log("Score:", score, "Result:", result);
+//40. Mini calculator using +, -, , /, %, * operators//
+let p = 12, q1 = 4;
+console.log(p, "+", q1, "=", p + q1);
+console.log(p, "-", q1, "=", p - q1);
+console.log(p, "*", q1, "=", p * q1);
+console.log(p, "/", q1, "=", p / q1);
+console.log(p, "%", q1, "=", p % q1);
+console.log(p, "*", q1, "=", p * q1); // power
+
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ifelse//
+      //check positive or negative number//
+      let num = -5;
+      console.log(num > 0 ? "positive":"negative");
+      //check even or odd// 
+      let a = 5;
+      console.log(a % 2 == 0 ? "even" : "odd" );
+      //check voting eligibility//
+      let b = 21;
+      console.log(b >= 18 ? "eligible to vote":"not eligible to vote");
+      //check datatype//
+      let c ="5000"
+      console.log(typeof(c));
+      //check greater number//
+      let d = 80;
+      let e = 60;
+      console.log(d > e ? d :  "it is smaller" );
+      //compare two strings//
+      let f = "Nithya"
+      let g = "nithya"
+      console.log(f == g ? "strings are equal" :"strings are not equal");
+      //check multiples of 5//
+      let h = 50;
+      console.log(h / 5 ? "multiples of 5": "not a multiplles of 5" );
+      //check if a number is 0//
+      let i = 0;
+      console.log(i == 0 ? "zero":"not zero");
+      //check marks pass/fail//
+      let j = 32;
+      console.log(j >= 35 ? "pass":"fail");
+      //temperature check//
+      let temp = 40;
+      if(temp<20){
+        console.log("cold");
+      }
+      else if(temp<=30)
+      {
+        console.log("warm");
+      }
+       else{
+        console.log("hot");
+       }
+    //Intermediate level//
+      //11.Find Largest of Three Numbers//
+      let k = 10; 
+      l = 15;
+      m = 25;
+      console.log(k > m && k > m ? k : l > m ? l : m );
+      //check leap year//
+      let year = 2024;
+    console.log((year % 4 === 0 &&  year % 100 !== 0) || year % 400 === 0 ? "Leap Year" : "Not a Leap Year");
+    //13.Check Character Type//
+        let char = "a";
+        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" || char === "A" || char === "E" || char === "I" || char === "O" || char === "U") {
+            console.log("Vowel");
+        } else if ((char >= "a" && char <= "z") || (char >= "A" && char <= "Z")) {
+            console.log("Consonant");
+        } else if (char >= "0" && char <= "9") {
+            console.log("Number");
+        } else {
+            console.log("Special Symbol");
+        }
+      //Check Login Credentials//
+        let username = "admin";
+        let password = "1234";
+        if (username === "admin" && password === "1234") {
+            console.log("Login Success");
+        } else {
+            console.log("Invalid Credentials");
+        }
+      //15.Check Grade//
+        let marks = 85;
+        if (marks >= 90) {
+            console.log("A");
+        } else if (marks >= 80) {
+            console.log("B");
+        } else if (marks >= 70) {
+            console.log("C");
+        } else {
+            console.log("Fail");
+        }
+     //16.Check Number Sign and Parity//
+        let nu = 7;
+        if (nu > 0 && nu % 2 === 0) {
+            console.log("Positive Even");
+        } else if (nu > 0 && nu % 2 !== 0) {
+            console.log("Positive Odd");
+        } else if (nu < 0) {
+            console.log("Negative Number");
+        } else {
+            console.log("Zero");
+          }
+      //17.Check Data Type and Value//
+        let data = "Hello";
+        if (typeof data === "string" && data !== "") {
+            console.log("Valid String");
+        } else {
+            console.log("Invalid");
+        }
+        //Discount Calculation//
+        let price = 1200;
+        if (price > 1000) {
+            console.log("20% Discount");
+        } else if (price > 500) {
+            console.log("10% Discount");
+        } else {
+            console.log("No Discount");
+        }
+        //19.Compare Two Numbers (Equal or Not)//
+        let x = 10;
+        let y = "10";
+        if (x == y) {
+            console.log("Equal with ==");
+        } else {
+            console.log("Not Equal with ==");
+        }
+        if (x === y) {
+            console.log("Equal with ===");
+        } else {
+            console.log("Not Equal with ===");
+        }
+    //20.Simple Calculator Using If-Else//
+        let num1 = 10;
+        let num2 = 5;
+        let operator = "*";
+        if (operator === "+") {
+            console.log("Result:", num1 + num2);
+        } else if (operator === "-") {
+            console.log("Result:", num1 - num2);
+        } else if (operator === "*") {
+            console.log("Result:", num1 * num2);
+        } else if (operator === "/") {
+            console.log("Result:", num1 / num2);
+        } else {
+            console.log("Invalid Operator");
+        }
+   </script>
+</body>
+</html>
